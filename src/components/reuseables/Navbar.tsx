@@ -89,7 +89,11 @@ const Navbar = ({ open, setOpen, navRef }: NavbarBurgerType) => {
 
 export default Navbar;
 Navbar.Wrapper = styled.div`
-  width: -webkit-fill-available;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: calc(100vw - 273px);
   height: 80px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
   display: flex;
@@ -146,6 +150,8 @@ Navbar.Wrapper = styled.div`
     }
   }
   @media (max-width: ${LAYOUT.xxLg}) {
+    width: 100vw;
+    left: 0;
     .nav-left {
       .menu-container {
         display: block;

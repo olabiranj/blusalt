@@ -33,7 +33,7 @@ Sidebar.Wrapper = styled.div<{ open: boolean }>`
   top: 0;
   left: 0;
   width: 273px;
-  z-index: 2;
+  z-index: 3;
   background: ${PRIMARY};
   padding: 30px 15px;
   display: flex;
@@ -92,7 +92,6 @@ Sidebar.Wrapper = styled.div<{ open: boolean }>`
     position: fixed;
     left: -273px;
     top: 0;
-    z-index: 2;
     ${({ open }) => (open ? "left: 0px;" : "left: -273px;")}
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
   }
