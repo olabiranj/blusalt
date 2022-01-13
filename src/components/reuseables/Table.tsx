@@ -93,6 +93,7 @@ const TableContainer = (props: any) => {
   return (
     <TableWrapper className="col-sm-9 col-md-9">
       <div className="inner">
+        <h4>Recent Requests</h4>
         <Table columns={columns} dataSource={data} scroll={{ x: 500 }} />
       </div>
     </TableWrapper>
@@ -108,6 +109,13 @@ const TableWrapper = styled.div`
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     padding: 15px;
+    h4 {
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: -0.4px;
+
+      color: #171717;
+    }
     .ant-table-thead > tr > th {
       position: relative;
       color: #8392ab;
@@ -141,7 +149,7 @@ const TableWrapper = styled.div`
           letter-spacing: -0.442553px;
 
           color: #141414;
-          margin:0;
+          margin: 0;
         }
         h6 {
           font-size: 14px;

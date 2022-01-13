@@ -4,9 +4,10 @@ import LAYOUT from "../../../helpers/layout";
 
 const HomePageWrapper = styled.div`
   display: flex;
+  height: 100vh;
   .main {
     width: calc(100% - 273px);
-    height: 100vh;
+    height: calc(100vh - 80px);
     margin-left: 273px;
     .container-fluid {
       height: calc(100vh - 100px);
