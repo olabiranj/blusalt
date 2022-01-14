@@ -41,7 +41,7 @@ const data = [
     amt: 2500,
   },
 ];
-const BarChartContainer = (props: any) => {
+const BarChartContainer: () => JSX.Element = () => {
   return (
     <BarChartContainerWrapper className="col-sm-3 col-md-3">
       <div className="inner">

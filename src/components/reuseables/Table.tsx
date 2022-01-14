@@ -8,13 +8,13 @@ import chiomImg from "../../assets/images/marie.png";
 import boluImg from "../../assets/images/kal-visuals-square.png";
 import MiriamImg from "../../assets/images/ivana-square.png";
 
-const TableContainer = (props: any) => {
+const TableContainer = () => {
   const columns = [
     {
       title: "Name/Email",
       dataIndex: "name",
       key: "name",
-      render: (text: any, record: any) => (
+      render: (text: string, record: any) => (
         <div className="user-info">
           <img src={record.img} alt="" />
           <div>

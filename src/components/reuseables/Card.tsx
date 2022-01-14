@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = (props: any) => {
+const Card = ({ img, value, label, ratio, line }: CardType) => {
   return (
     <CardWrapper className="col-sm-6 col-md-6 col-lg-3">
       <div className="inner">
-        <img src={props.img} alt="img" />
+        <img src={img} alt="img" />
         <div>
-          <h3>{props.value}</h3>
-          <h5>{props.label}</h5>
+          <h3>{value}</h3>
+          <h5>{label}</h5>
           <h6>
             <span>
-              <img src={props.line} alt="graph" />{" "}
+              <img src={line} alt="graph" />{" "}
             </span>
-            <span className="text-success mx-2"> {props.ratio}</span> Last month
+            <span className="text-success mx-2"> {ratio}</span> Last month
           </h6>
         </div>
       </div>

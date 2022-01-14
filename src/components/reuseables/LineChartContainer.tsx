@@ -54,7 +54,7 @@ const data = [
     amt: 2500,
   },
 ];
-const LineChartContainer = (props: any) => {
+const LineChartContainer = () => {
   return (
     <LineChartContainerWrapper className="col-sm-9 col-md-9">
       <div className="inner">
