@@ -6,6 +6,7 @@ const HomePageWrapper = styled.div`
   display: flex;
   height: 100vh;
   .main {
+    margin-top: 100px;
     width: calc(100% - 273px);
     height: calc(100vh - 80px);
     margin-left: 273px;
